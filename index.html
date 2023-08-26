@@ -32,22 +32,17 @@
 			<form action="/form-viewer.php" method="post">
 				<label for="fullname">Full Name</label>
 				<input id="fullname" name="fullname" type="text" autocomplete="fullname" aria-required="true">
-
 				<label for="email">Email</label>
 				<input id="email" name="email" type="email" autocomplete="email" aria-required="true">
-
 				<label for="tel">Phone</label>
 				<input id="tel" name="tel" type="tel" autocomplete="phone" aria-required="true">
-
 				<fieldset>
 					<legend>Preferred Contact Method</legend>
 					<input id="phone" type="radio" name="method" value="phone"/>
 					<label for="phone">Phone</label>
-
 					<input id="email" type="radio" name="method" value="email"/>
 					<label for="email">Email</label>
 				</fieldset>
-
 				<label for="state">Select State</label>
 				<select id="state" name="select" aria-required="true">
 					<option value="AL">Alabama</option>
@@ -100,8 +95,7 @@
 					<option value="WY">Wyoming</option>
 				</select>
 				<label for="message">Message</label>
-				<textarea id="message" input type="text" required></textarea>
-
+				<textarea id="message" input type="text" autocomplete="message" aria-required="true"></textarea>
 				<input type="submit" name="submit" value="Submit">
 			</form>
 		</article>
